@@ -1,0 +1,16 @@
+clc;
+clear;
+close;
+Pt=15;
+Aet=0.2;
+Aer=0.5;
+R=15000;
+f=5*10^9;
+c=3*10^8;
+lambda=c/f;
+Gt=(4*%pi*Aet)/(lambda^2);
+disp("Gt:",Gt);
+Gr=(4*%pi*Aer)/(lambda^2);
+disp("Gr:",Gr);
+Pr=(Pt*Gt*Gr*lambda^2)/(4*%pi*R)^2;
+disp("Power delivered is:", Pr);
